@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(Intent.ACTION_CALL,uri);
                 // We can also write ACTION_VIEW but that will just make the dialer open
                 // This will directly make the call
-                //But it will show an error that we do not have the permission
+                //But it will crash the app and logcat shows an error that we do not have the permission
                 //When clearly we do
                 //This is because CALL is a dangerous permission
                 startActivity(i);
